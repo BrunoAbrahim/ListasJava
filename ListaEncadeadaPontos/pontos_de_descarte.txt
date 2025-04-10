@@ -1,0 +1,10 @@
+1;Plástico;Rua A, nº 123
+2;Vidro;Av. B, nº 456
+3;Eletrônicos;Praça C, nº 789
+4;Papel;Rua das Flores, nº 111
+5;Metal;Av. Industrial, nº 999
+6;Plástico;Rua Verde, nº 202
+7;Vidro;Travessa Azul, nº 303
+8;Eletrônicos;Rua Tech, nº 404
+9;Papel;Av. Central, nº 505
+10;Plástico;Rua Circular, nº 606
