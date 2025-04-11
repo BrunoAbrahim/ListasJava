@@ -1,9 +1,9 @@
 package org.example;
 
 public class ListaEncadeada {
-    private PontoDeDescarte head; // Referência para o primeiro nó da lista
+    private PontoDeDescarte head; 
 
-    // Insere um novo ponto no final da lista
+    
     public void inserir(PontoDeDescarte ponto) {
         if (head == null) {
             head = ponto; // Se a lista estiver vazia, insere no início
@@ -17,14 +17,14 @@ public class ListaEncadeada {
         }
     }
 
-    // Exibe todos os pontos armazenados na lista
+   
     public void exibir() {
         if (head == null) {
             System.out.println("Nenhum ponto de descarte encontrado.");
             return;
         }
 
-        // Mostra os dados formatados do ponto
+        
         System.out.println("\nPontos de Coleta:");
         PontoDeDescarte atual = head;
         while (atual != null) {
