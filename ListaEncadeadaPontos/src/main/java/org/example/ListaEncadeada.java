@@ -6,14 +6,13 @@ public class ListaEncadeada {
     
     public void inserir(PontoDeDescarte ponto) {
         if (head == null) {
-            head = ponto; // Se a lista estiver vazia, insere no início
+            head = ponto; 
         } else {
-            // Percorre até o final da lista
             PontoDeDescarte atual = head;
             while (atual.proximo != null) {
                 atual = atual.proximo;
             }
-            atual.proximo = ponto; // Adiciona o novo nó no final
+            atual.proximo = ponto; 
         }
     }
 
