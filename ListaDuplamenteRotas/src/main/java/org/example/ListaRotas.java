@@ -13,18 +13,17 @@ public class ListaRotas {
     public void inserir(int id, String nome, String tipo, String regiao) {
         Rota nova = new Rota(id, nome, tipo, regiao);
         if (cabeca == null) {
-            cabeca = nova; // Primeira rota da lista
+            cabeca = nova; 
         } else {
             Rota atual = cabeca;
             while (atual.proximo != null) {
-                atual = atual.proximo; // Vai até o último nó
+                atual = atual.proximo; 
             }
             atual.proximo = nova;
-            nova.anterior = atual; // Liga o novo nó com o anterior
+            nova.anterior = atual; 
         }
     }
 
-    
     public void carregarDeArquivo(String nomeArquivo, String filtro) {
         try (BufferedReader leitor = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha;
@@ -35,8 +34,6 @@ public class ListaRotas {
                     String nome = partes[1].trim();
                     String tipo = partes[2].trim();
                     String regiao = partes[3].trim();
-
-                    // Insere na lista se corresponder ao filtro
 
                     if (tipo.equalsIgnoreCase(filtro) || regiao.equalsIgnoreCase(filtro)) {
                         inserir(id, nome, tipo, regiao);
