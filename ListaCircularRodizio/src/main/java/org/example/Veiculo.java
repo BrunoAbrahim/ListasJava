@@ -5,8 +5,7 @@ public class Veiculo {
     String dia;
     String horario;
     Veiculo proximo;
-
-    // Construtor que inicializa os dados do veículo
+    
     public Veiculo(String placa, String dia, String horario) {
         this.placa = placa;
         this.dia = dia;
