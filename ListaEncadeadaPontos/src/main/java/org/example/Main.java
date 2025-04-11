@@ -23,7 +23,6 @@ public class Main {
             String linha;
 
             while ((linha = leitor.readLine()) != null) {
-                // Simula sscanf: separa por ";"
                 String[] partes = linha.split(";", 3);
 
                 if (partes.length == 3) {
@@ -37,7 +36,6 @@ public class Main {
                     String tipo = partes[1].trim();
                     String endereco = partes[2].trim();
 
-                    // Simula strstr com contains
                     if (tipo.toLowerCase().contains(filtro)) {
                         lista.inserir(new PontoDeDescarte(id, tipo, endereco));
                     }
@@ -50,7 +48,7 @@ public class Main {
         }
 
         lista.exibir();
-        lista.limpar(); // opcional, GC cuida
+        lista.limpar(); 
         scanner.close();
     }
 }
