@@ -9,7 +9,7 @@ public class ListaRotas {
         this.cabeca = null;
     }
 
-    // Insere uma nova rota no final da lista
+    
     public void inserir(int id, String nome, String tipo, String regiao) {
         Rota nova = new Rota(id, nome, tipo, regiao);
         if (cabeca == null) {
@@ -24,7 +24,7 @@ public class ListaRotas {
         }
     }
 
-    // Lê o arquivo e insere na lista apenas as rotas que atendem ao filtro
+    
     public void carregarDeArquivo(String nomeArquivo, String filtro) {
         try (BufferedReader leitor = new BufferedReader(new FileReader(nomeArquivo))) {
             String linha;
