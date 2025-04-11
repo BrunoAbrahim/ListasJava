@@ -13,7 +13,6 @@ public class Main {
 
         File arquivo = new File("pontos_de_descarte.txt");
 
-        // Verifica se o arquivo existe antes de abrir
         if (!arquivo.exists()) {
             System.out.println("Erro: Arquivo não encontrado em " + arquivo.getAbsolutePath());
             return;
@@ -30,7 +29,7 @@ public class Main {
                     try {
                         id = Integer.parseInt(partes[0].trim());
                     } catch (NumberFormatException e) {
-                        continue; // ignora linha inválida
+                        continue; 
                     }
 
                     String tipo = partes[1].trim();
