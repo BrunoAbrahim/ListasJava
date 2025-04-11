@@ -9,7 +9,7 @@ public class Rota {
     Rota anterior;
     Rota proximo;
 
-    // Construtor do nó
+    
     public Rota(int id, String nomeLinha, String tipoTransporte, String regiao) {
         this.id = id;
         this.nomeLinha = nomeLinha;
